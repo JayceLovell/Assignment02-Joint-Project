@@ -4,6 +4,7 @@
     <div class="container">
         <div class="row">
                 <h1>put stuff here</h1>
+            <p> Group project</p>
         </div>
     </div>
 </asp:Content>
