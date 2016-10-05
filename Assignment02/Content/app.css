@@ -1,11 +1,16 @@
 ﻿/* custom css goes here */
 
-/* Name: Tom Tsiliopoulos */
-/* Student ID: 300818557 */
-/* Date: September 14, 2016 */
-/* app.css file */
+/* Name: Names: 
+    Anmol Sharma Student ID: 300878140
+    Waynell Lovell Student ID: 300833478
+    app.css file */
 
 body { 
     padding-bottom: 70px; 
 
+}
+#logo
+{
+    padding-top:1px;
+    border-radius:5px;
 }
