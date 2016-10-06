@@ -1,6 +1,6 @@
 ﻿/* custom JavaScript goes here */
 
-/* Name: Tom Tsiliopoulos */
-/* Student ID: 300818557 */
-/* Date: September 14, 2016 */
+/* Name: Names: 
+    Anmol Sharma Student ID: 300878140
+    Waynell Lovell Student ID: 300833478
 /* app.js file */

@@ -5,12 +5,14 @@
     Waynell Lovell Student ID: 300833478
     app.css file */
 
-body { 
-    padding-bottom: 70px; 
-
+body {
+    padding-bottom: 70px;
 }
 #logo
 {
     padding-top:1px;
     border-radius:5px;
+}
+#Usernametxt,#Passwordtxt,#Loginbtn{
+    height:50px;
 }
