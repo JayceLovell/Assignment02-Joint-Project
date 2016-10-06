@@ -7,6 +7,8 @@
 
 body {
     padding-bottom: 70px;
+    background-image: url('../Assets/Images/background.jpg');
+    background-size:contain;
 }
 #logo
 {
