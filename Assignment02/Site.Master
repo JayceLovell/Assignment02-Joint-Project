@@ -67,9 +67,9 @@
 
         <!-- Footer Bar -->
         <footer role="contentinfo">
-            <nav class="navbar navbar-default navbar-fixed-bottom">
+            <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
                 <div class="container">
-                    <h4>&copy; Assignment2 - Cricket Game Tracker </h4>
+                    <h4 style="color:white;">&copy; Assignment2 - Cricket Game Tracker </h4>
                 </div>
             </nav>
         </footer>
