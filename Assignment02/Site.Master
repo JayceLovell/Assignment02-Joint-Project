@@ -9,6 +9,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="Assets/Images/icon.ico" type="image"/>
     <title></title>
     <!-- CSS Section -->
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -44,12 +45,12 @@
                             <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
                             <li id="register" runat="server"><a href="Register.aspx"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
                             <li>
-                                <asp:TextBox CssClass="form-control" ID="Usernametxt" runat="server" required="true" ></asp:TextBox>
+                                <asp:TextBox Font-Size="25px" CssClass="form-control" ID="Usernametxt" runat="server" placeholder="Username" required="true" ></asp:TextBox>
                             </li>
                             <li>
-                                <asp:TextBox CssClass="form-control" ID="Passwordtxt" runat="server" requied="true" type="password"></asp:TextBox>
+                                <asp:TextBox Font-Size="25px" CssClass="form-control" ID="Passwordtxt" runat="server" placeholder="Password" requied="true" type="password"></asp:TextBox>
                             </li>
-                            <li><button id="Loginbtn" type="submit" class="btn btn-default">Login</button></li>
+                            <li><button style="font-size:25px; font:bold;" id="Loginbtn" type="submit" class="btn btn-default">Login</button></li>
                         </ul>
                             
                     </div>
