@@ -6,8 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 // using statemetns that are required to connect to EF DB
-using Assignment02.Models;
-using System.Web.ModelBinding;
+//using Assignment02.Models;
+//using System.Web.ModelBinding;
 
 namespace Assignment02
 {
