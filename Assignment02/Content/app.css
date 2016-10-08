@@ -16,7 +16,7 @@ body {
     padding-top:1px;
     border-radius:5px;
 }
-#Usernametxt,#Passwordtxt,#Loginbtn{
+#Usernametxt,#Passwordtxt,#LoginButton{
     height:50px;
     width:150px;
 }
