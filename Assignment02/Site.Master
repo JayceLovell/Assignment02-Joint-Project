@@ -48,10 +48,10 @@
                                 <asp:Label ID="lblUsername" runat="server"></asp:Label>
                             </li>
                             <li>
-                                <asp:TextBox Font-Size="25px" CssClass="form-control" ID="Usernametxt" runat="server" placeholder="Username" required="true" ></asp:TextBox>
+                                <asp:TextBox Font-Size="25px" CssClass="form-control" ID="Usernametxt" runat="server" placeholder="Username" ></asp:TextBox>
                             </li>
                             <li>
-                                <asp:TextBox Font-Size="25px" CssClass="form-control" ID="Passwordtxt" runat="server" placeholder="Password" requied="true" type="password"></asp:TextBox>
+                                <asp:TextBox Font-Size="25px" CssClass="form-control" ID="Passwordtxt" runat="server" placeholder="Password" type="password"></asp:TextBox>
                             </li>
                             <li><asp:Button Text="Login" ID="LoginButton" CssClass="btn btn-lg" runat="server"/></li>
                         </ul>
