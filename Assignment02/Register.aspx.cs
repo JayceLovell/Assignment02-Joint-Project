@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Drawing;
+using System.Diagnostics;
 
 // using statemetns that are required to connect to EF DB
 using Assignment02.Models;
@@ -20,39 +22,49 @@ namespace Assignment02
 
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
-            // Use EF to conect to the server
-            using (CricketInfo db = new CricketInfo())
+            if(ConfirmPasswordTextBox.Text != PasswordTextBox.Text)
             {
-                // use the Account model to create a new Account object and 
-                // save a new record
-                Account newAccount = new Account();
-
-                int Id = 0;
-
-                if (Request.QueryString.Count > 0) // our URL has a ID in it
+                ConfirmPasswordTextBox.BorderColor = Color.Red;
+                ConfirmPasswordTextBox.BorderStyle = BorderStyle.Double;
+                ConfirmPasswordTextBox.BorderWidth = 10;
+                ConfirmPasswordTextBox.Text = "Passwords do not match!";
+            }
+            else
+            {
+                // Use EF to conect to the server
+                using (CricketInfo db = new CricketInfo())
                 {
-                    // get the id from the URL
+                    // use the Account model to create a new Account object and 
+                    // save a new record
+                    Account newAccount = new Account();
+
+                    int Id = 0;
+
+                    if (Request.QueryString.Count > 0) // our URL has a ID in it
+                    {
+                        // get the id from the URL
+                    }
+
+                    // add form data to the new student record
+                    newAccount.UserName = UserNameTextBox.Text;
+                    newAccount.Password = PasswordTextBox.Text;
+                    newAccount.Email = EmailTextBox.Text;
+                    newAccount.D_O_B = Convert.ToDateTime(DOBTextBox.Text);
+                    newAccount.Gender = GenderRadioButtons.SelectedValue.ToString();
+
+                    // use LINQ to ADO.NEt to add/insert the account into the db
+
+                    if (Id == 0)
+                    {
+                        db.Accounts.Add(newAccount);
+                    }
+
+                    // save our changes - also updates and inserts
+                    db.SaveChanges();
+
+                    // Redirect back to the updates Main page
+                    Response.Redirect("~/Default.aspx");
                 }
-
-                // add form data to the new student record
-                newAccount.UserName = UserNameTextBox.Text;
-                newAccount.Password = PasswordTextBox.Text;
-                newAccount.Email = EmailTextBox.Text;
-                newAccount.D_O_B = Convert.ToDateTime(DOBTextBox.Text);
-                newAccount.Gender = GenderRadioButtons.SelectedValue.ToString();
-
-                // use LINQ to ADO.NEt to add/insert the account into the db
-
-                if(Id==0)
-                {
-                    db.Accounts.Add(newAccount);
-                }
-
-                // save our changes - also updates and inserts
-                db.SaveChanges();
-
-                // Redirect back to the updates Main page
-                Response.Redirect("~/Default.aspx");
             }
         }
 

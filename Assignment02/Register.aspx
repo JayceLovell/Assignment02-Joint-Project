@@ -13,7 +13,7 @@
                 <div class="form-group">
                     <label class="control-label" for="PasswordTextBox">Password</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="PasswordTextBox" 
-                        placeholder="*******" TextMode="Password" required="true"></asp:TextBox>
+                        TextMode="Password" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="ConfirmPasswordTextBox">Confirm Password</label>

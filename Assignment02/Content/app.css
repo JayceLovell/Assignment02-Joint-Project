@@ -20,3 +20,27 @@ body {
     height:50px;
     width:150px;
 }
+.leftborder{
+    border-left-style:solid;
+    border-left-color:white;
+    border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+}
+.rightborder{
+    border-right-style:solid;
+    border-right-color:white;
+    border-bottom-right-radius:5px;
+    border-top-right-radius:5px;
+}
+.bottomborder{
+    border-bottom-style:solid;
+    border-bottom-color:white;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.topborder{
+    border-top-style:solid;
+    border-top-color:white;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
