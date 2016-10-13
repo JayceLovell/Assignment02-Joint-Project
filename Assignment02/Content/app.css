@@ -44,3 +44,7 @@ body {
     border-top-left-radius:5px;
     border-top-right-radius:5px;
 }
+#MainContent_TeamName1lbl,#MainContent_TeamName2lbl,#MainContent_Game1Team1Score,#MainContent_Game1Team2Score,#MainContent_Game1Team1Outs,#MainContent_Game1Team2Outs,#MainContent_Game1Spectators
+{
+    font-size:24px;
+}
