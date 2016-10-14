@@ -17,10 +17,10 @@ namespace Assignment02
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 // check if a user is logged in
-                if(HttpContext.Current.User.Identity.IsAuthenticated)
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
                 {
                     // show the user logged in
                     NotLoginHolder.Visible = false;
@@ -64,7 +64,7 @@ namespace Assignment02
             var user = userManager.Find(Usernametxt.Text, Passwordtxt.Text);
 
             // if a match is found for the user
-            if(user != null)
+            if (user != null)
             {
                 // authenticate and login our user
                 var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
