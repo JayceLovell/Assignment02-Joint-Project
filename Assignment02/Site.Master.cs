@@ -27,6 +27,7 @@ namespace Assignment02
                     if (HttpContext.Current.User.IsInRole("Admin"))
                     {
                         name.Text = "Signed in as " + HttpContext.Current.User.Identity.Name.ToString()+"(Admin)";
+                        Admins.Visible = true;
                     }
                     else
                     {
@@ -57,6 +58,9 @@ namespace Assignment02
                     register.Attributes.Add("class", "active");
                     break;
                 case "UserAccount":
+                    register.Attributes.Add("class", "active");
+                    break;
+                case "AdminPage":
                     register.Attributes.Add("class", "active");
                     break;
             }

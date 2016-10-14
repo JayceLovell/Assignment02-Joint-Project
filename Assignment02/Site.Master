@@ -43,7 +43,11 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
-                            <li id="about" runat="server"><a href="About.aspx"><i class="fa fa-into fa-lg"></i> About</a></li>
+                            <asp:PlaceHolder ID="Admins" runat="server" Visible="false">
+                                <li id="adminpage" runat="server"><a href="AdminPage.aspx"><i class="fa fa-lock" aria-hidden="true"></i> Admins</a></li>
+                            </asp:PlaceHolder>
+                            <li id="about" runat="server"><a href="About.aspx"><i class="fa fa-info" aria-hidden="true"></i> About</a></li>
+                            
                             <asp:PlaceHolder ID="NotLoginHolder" runat="server">
                             <li id="register" runat="server"><a href="Register.aspx"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
                             <li>
