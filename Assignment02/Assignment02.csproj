@@ -117,9 +117,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Assets\Images\bangladeshLogo.jpg" />
+    <Content Include="Assets\Images\cricGameBack.jpg" />
     <Content Include="Assets\Images\icon.ico" />
     <Content Include="Assets\Images\background.jpg" />
     <Content Include="Assets\Images\combine_logo.jpg" />
+    <Content Include="Assets\Images\indianLogo.jpg" />
+    <Content Include="Assets\Images\pakistanLogo.jpg" />
     <Content Include="packages.config" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\jquery-2.2.4.min.map" />
