@@ -24,7 +24,14 @@ namespace Assignment02
                 {
                     // show the user logged in
                     NotLoginHolder.Visible = false;
-                    name.Text = "Signed in as " + HttpContext.Current.User.Identity.Name.ToString();
+                    if (HttpContext.Current.User.IsInRole("Admin"))
+                    {
+                        name.Text = "Signed in as " + HttpContext.Current.User.Identity.Name.ToString()+"(Admin)";
+                    }
+                    else
+                    {
+                        name.Text = "Signed in as " + HttpContext.Current.User.Identity.Name.ToString();
+                    }
                 }
                 else
                 {
