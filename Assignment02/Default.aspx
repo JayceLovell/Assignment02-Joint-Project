@@ -4,13 +4,18 @@
         <div class="row">
             <div class="col-md-offset-4 col-md-4">
                 <h1>This Month Games</h1>
+                <br />
+                <br />
             </div>
         </div>
         <div class="row">
-            <div class="col-md-offset-4 col-md-4">
+            <div class="col-md-offset-0 col-md-4">
+                <div class="game1">
                 <h2>Game 1</h2>
+                    <img src="Assets/Images/indianLogo.jpg"  width="35"/>
                     <asp:Label ID="TeamName1lbl" runat="server"></asp:Label>
                 <h3>VS</h3>
+                    <img src="Assets/Images/bangladeshLogo.jpg" width="35"/>
                     <asp:Label ID="TeamName2lbl" runat="server"></asp:Label>
                 <h3>Score</h3>
                     <asp:Label ID="Game1Team1Score" runat="server"></asp:Label>
@@ -20,6 +25,7 @@
                     <asp:Label ID="Game1Team2Outs" runat="server"></asp:Label>
                 <h3>Spectators</h3>
                     <asp:Label ID="Game1Spectators" runat="server"></asp:Label>
+            </div>
             </div>
         </div>
     </div>

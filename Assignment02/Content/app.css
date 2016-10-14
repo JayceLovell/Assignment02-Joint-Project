@@ -48,3 +48,10 @@ body {
 {
     font-size:24px;
 }
+.game1 {
+    border-left: 6px blue;
+    background-color: lightgrey;
+    float: left;
+    width: 350px;
+    background-image: url('../Assets/Images/cricGameBack.jpg');
+}
