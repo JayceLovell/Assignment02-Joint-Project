@@ -43,19 +43,21 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
                             <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+                            <li id="about" runat="server"><a href="About.aspx"><i class="fa fa-into fa-lg"></i> About</a></li>
+                            <asp:PlaceHolder ID="NotLoginHolder" runat="server">
                             <li id="register" runat="server"><a href="Register.aspx"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
-                            <li style="visibility:hidden">
-                                <asp:Label ID="lblUsername" runat="server"></asp:Label>
-                            </li>
                             <li>
                                 <asp:TextBox Font-Size="25px" CssClass="form-control" ID="Usernametxt" runat="server" placeholder="Username" ></asp:TextBox>
                             </li>
                             <li>
                                 <asp:TextBox Font-Size="25px" CssClass="form-control" ID="Passwordtxt" runat="server" placeholder="Password" type="password"></asp:TextBox>
                             </li>
-                            <li><asp:Button Text="Login" ID="LoginButton" CssClass="btn btn-lg" runat="server"/></li>
-                        </ul>
-                            
+                            <li><asp:Button Text="Login" ID="LoginButton" CssClass="btn btn-lg" runat="server" OnClick="LoginButton_Click"/></li>
+                            </asp:PlaceHolder>
+                            <asp:PlaceHolder ID="LoginHolder" runat="server">
+                            <asp:LinkButton CssClass="navbar-link navbar-text" ID="name" runat="server" OnClick="LogoutButton_Click" Text=""></asp:LinkButton>
+                            </asp:PlaceHolder>
+                        </ul>  
                     </div>
                     <!-- /.navbar-collapse -->
                 </div>
@@ -73,7 +75,7 @@
         <footer role="contentinfo">
             <nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
                 <div class="container">
-                    <h4 style="color:white;">&copy; Assignment2 - Cricket Game Tracker </h4>
+                    <h4 style="color:white;">&copy; Assignment2 - Cricket Games Tracker </h4>
                 </div>
             </nav>
         </footer>

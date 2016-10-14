@@ -4,3 +4,9 @@
     Anmol Sharma Student ID: 300878140
     Waynell Lovell Student ID: 300833478
 /* app.js file */
+$(document).ready(function () {
+    console.log("jquery trigerring!");
+    $("#LogoutButton").click(function () {
+        return confirm("Are you Sure you want to logout?");
+    })
+})

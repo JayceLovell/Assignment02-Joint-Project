@@ -12,28 +12,11 @@ namespace Assignment02.Models
         {
         }
 
-        public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Team2> Team2 { get; set; }
         public virtual DbSet<Team1> Team1 { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Account>()
-                .Property(e => e.UserName)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Account>()
-                .Property(e => e.Password)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Account>()
-                .Property(e => e.Gender)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Account>()
-                .Property(e => e.Email)
-                .IsUnicode(false);
 
             modelBuilder.Entity<Team2>()
                 .Property(e => e.TEAMSCORE)

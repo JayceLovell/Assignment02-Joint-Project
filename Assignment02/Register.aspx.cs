@@ -4,12 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Drawing;
-using System.Diagnostics;
 
-// using statemetns that are required to connect to EF DB
-using Assignment02.Models;
-using System.Web.ModelBinding;
+// required for Identity and OWIN Secuirty
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
 
 namespace Assignment02
 {
@@ -22,49 +21,41 @@ namespace Assignment02
 
         protected void RegisterButton_Click(object sender, EventArgs e)
         {
-            if(ConfirmPasswordTextBox.Text != PasswordTextBox.Text)
+            //create a new userStore and userManager objects
+            var userStore = new UserStore<IdentityUser>();
+            var userManager = new UserManager<IdentityUser>(userStore);
+
+            //create a new user object
+            var user = new IdentityUser()
             {
-                ConfirmPasswordTextBox.BorderColor = Color.Red;
-                ConfirmPasswordTextBox.BorderStyle = BorderStyle.Double;
-                ConfirmPasswordTextBox.BorderWidth = 10;
-                ConfirmPasswordTextBox.Text = "Passwords do not match!";
+                UserName = UserNameTextBox.Text,
+                Email = EmailTextBox.Text,
+            };
+
+            // create a new user in the db and store the results
+            IdentityResult result = userManager.Create(user, PasswordTextBox.Text);
+
+            // check if successfully registerd?
+            if(result.Succeeded)
+            {
+                //make user a guest level
+                var roleresult = userManager.AddToRoles(user.Id, "Guest");
+
+                //authenticate and login our new user
+                var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+                var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+
+                // sign in the user
+                authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
+
+                // Redirect to the Main Menu Page
+                Response.Redirect("~/Default.aspx");
             }
             else
             {
-                // Use EF to conect to the server
-                using (CricketInfo db = new CricketInfo())
-                {
-                    // use the Account model to create a new Account object and 
-                    // save a new record
-                    Account newAccount = new Account();
-
-                    int Id = 0;
-
-                    if (Request.QueryString.Count > 0) // our URL has a ID in it
-                    {
-                        // get the id from the URL
-                    }
-
-                    // add form data to the new student record
-                    newAccount.UserName = UserNameTextBox.Text;
-                    newAccount.Password = PasswordTextBox.Text;
-                    newAccount.Email = EmailTextBox.Text;
-                    newAccount.D_O_B = Convert.ToDateTime(DOBTextBox.Text);
-                    newAccount.Gender = GenderRadioButtons.SelectedValue.ToString();
-
-                    // use LINQ to ADO.NEt to add/insert the account into the db
-
-                    if (Id == 0)
-                    {
-                        db.Accounts.Add(newAccount);
-                    }
-
-                    // save our changes - also updates and inserts
-                    db.SaveChanges();
-
-                    // Redirect back to the updates Main page
-                    Response.Redirect("~/Default.aspx");
-                }
+                // display error in the AlterFlash div
+                StatusLabel.Text = result.Errors.FirstOrDefault();
+                AlertFlash.Visible = true;
             }
         }
 
