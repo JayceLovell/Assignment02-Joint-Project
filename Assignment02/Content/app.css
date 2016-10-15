@@ -89,3 +89,9 @@ border-top: 2px dashed #046ca3;
     width: 40%;
     background-color: #8698E8;    font-size:24px;
 }
+
+.pageFooter
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:#7AEFFF;
+}
