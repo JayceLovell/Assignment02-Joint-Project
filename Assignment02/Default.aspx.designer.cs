@@ -13,31 +13,49 @@ namespace Assignment02 {
     public partial class Default {
         
         /// <summary>
-        /// TeamName1lbl control.
+        /// Game1Team1Logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TeamName1lbl;
+        protected global::System.Web.UI.HtmlControls.HtmlImage Game1Team1Logo;
         
         /// <summary>
-        /// TeamName2lbl control.
+        /// Game1Team1Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TeamName2lbl;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game1Team1Name;
         
         /// <summary>
-        /// Game1Team1Score control.
+        /// Game1Team2Logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team1Score;
+        protected global::System.Web.UI.HtmlControls.HtmlImage Game1Team2Logo;
+        
+        /// <summary>
+        /// Game1Team2Name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game1Team2Name;
+        
+        /// <summary>
+        /// Game1Team1Runs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game1Team1Runs;
         
         /// <summary>
         /// Game1Team1Outs control.
@@ -46,16 +64,16 @@ namespace Assignment02 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team1Outs;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game1Team1Outs;
         
         /// <summary>
-        /// Game1Team2Score control.
+        /// Game1Team2Runs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team2Score;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game1Team2Runs;
         
         /// <summary>
         /// Game1Team2Outs control.
@@ -64,7 +82,7 @@ namespace Assignment02 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team2Outs;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game1Team2Outs;
         
         /// <summary>
         /// Game1Spectators control.
@@ -73,195 +91,267 @@ namespace Assignment02 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Spectators;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game1Spectators;
         
         /// <summary>
-        /// TeamName1lbl1 control.
+        /// Game2Team1Logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TeamName1lbl1;
+        protected global::System.Web.UI.HtmlControls.HtmlImage Game2Team1Logo;
         
         /// <summary>
-        /// TeamName2lbl1 control.
+        /// Game2Team1Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TeamName2lbl1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game2Team1Name;
         
         /// <summary>
-        /// Game1Team1Score1 control.
+        /// Game2Team2Logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team1Score1;
+        protected global::System.Web.UI.HtmlControls.HtmlImage Game2Team2Logo;
         
         /// <summary>
-        /// Game1Team1Outs1 control.
+        /// Game2Team2Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team1Outs1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game2Team2Name;
         
         /// <summary>
-        /// Game1Team2Score1 control.
+        /// Game2Team1Runs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team2Score1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game2Team1Runs;
         
         /// <summary>
-        /// Game1Team2Outs1 control.
+        /// Game2Team1Outs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team2Outs1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game2Team1Outs;
         
         /// <summary>
-        /// Game1Spectators1 control.
+        /// Game2Team2Runs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Spectators1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game2Team2Runs;
         
         /// <summary>
-        /// TeamName1lbl2 control.
+        /// Game2Team2Outs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TeamName1lbl2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game2Team2Outs;
         
         /// <summary>
-        /// TeamName2lbl2 control.
+        /// Game2Spectators control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TeamName2lbl2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game2Spectators;
         
         /// <summary>
-        /// Game1Team1Score2 control.
+        /// Game3Team1Logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team1Score2;
+        protected global::System.Web.UI.HtmlControls.HtmlImage Game3Team1Logo;
         
         /// <summary>
-        /// Game1Team1Outs2 control.
+        /// Game3Team1Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team1Outs2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game3Team1Name;
         
         /// <summary>
-        /// Game1Team2Score2 control.
+        /// Game3Team2Logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team2Score2;
+        protected global::System.Web.UI.HtmlControls.HtmlImage Game3Team2Logo;
         
         /// <summary>
-        /// Game1Team2Outs2 control.
+        /// Game3Team2Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team2Outs2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game3Team2Name;
         
         /// <summary>
-        /// Game1Spectators2 control.
+        /// Game3Team1Runs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Spectators2;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game3Team1Runs;
         
         /// <summary>
-        /// TeamName1lbl3 control.
+        /// Game3Team1Outs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TeamName1lbl3;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game3Team1Outs;
         
         /// <summary>
-        /// TeamName2lbl3 control.
+        /// Game3Team2Runs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TeamName2lbl3;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game3Team2Runs;
         
         /// <summary>
-        /// Game1Team1Score3 control.
+        /// Game3Team2Outs control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team1Score3;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game3Team2Outs;
         
         /// <summary>
-        /// Game1Team1Outs3 control.
+        /// Game3Spectators control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team1Outs3;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game3Spectators;
         
         /// <summary>
-        /// Game1Team2Score3 control.
+        /// Game4Team1Logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team2Score3;
+        protected global::System.Web.UI.HtmlControls.HtmlImage Game4Team1Logo;
         
         /// <summary>
-        /// Game1Team2Outs3 control.
+        /// Game4Team1Name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Team2Outs3;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game4Team1Name;
         
         /// <summary>
-        /// Game1Spectators3 control.
+        /// Game4Team2Logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Game1Spectators3;
+        protected global::System.Web.UI.HtmlControls.HtmlImage Game4Team2Logo;
+        
+        /// <summary>
+        /// Game4Team2Name control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game4Team2Name;
+        
+        /// <summary>
+        /// Game4Team1Runs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game4Team1Runs;
+        
+        /// <summary>
+        /// Game4Team1Outs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game4Team1Outs;
+        
+        /// <summary>
+        /// Game4Team2Runs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game4Team2Runs;
+        
+        /// <summary>
+        /// Game4Team2Outs control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game4Team2Outs;
+        
+        /// <summary>
+        /// Game4Spectators control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game4Spectators;
+        
+        /// <summary>
+        /// PreviousButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton PreviousButton;
+        
+        /// <summary>
+        /// NextButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton NextButton;
     }
 }

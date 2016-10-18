@@ -16,78 +16,13 @@ body {
     padding-top:1px;
     border-radius:5px;
 }
+#Game1Team1Logo,#Game1Team2Logo,#Game2Team1Logo,#Game2Team2Logo,#Game3Team1Logo,#Game3Team2Logo,#Game4Team1Logo,#Game4Team2Logo
+{
+
+}
 #Usernametxt,#Passwordtxt,#LoginButton{
     height:50px;
     width:150px;
-}
-.leftborder{
-    border-left-style:solid;
-    border-left-color:white;
-    border-bottom-left-radius:5px;
-    border-top-left-radius:5px;
-}
-.rightborder{
-    border-right-style:solid;
-    border-right-color:white;
-    border-bottom-right-radius:5px;
-    border-top-right-radius:5px;
-}
-.bottomborder{
-    border-bottom-style:solid;
-    border-bottom-color:white;
-    border-bottom-left-radius:5px;
-    border-bottom-right-radius:5px;
-}
-.topborder{
-    border-top-style:solid;
-    border-top-color:white;
-    border-top-left-radius:5px;
-    border-top-right-radius:5px;
-}
-#MainContent_TeamName1lbl,#MainContent_TeamName2lbl,#MainContent_Game1Team1Score,#MainContent_Game1Team2Score,#MainContent_Game1Team1Outs,#MainContent_Game1Team2Outs,#MainContent_Game1Spectators
-{
-    font-size:24px;
-}
-.game1 {
-    border-top: 2px dashed #046ca3;
-	border-bottom: 1px dashed #046ca3;
-        box-shadow: inset 0 -1px 0 0 #046ca3, inset 0 1px 0 0 #046ca3, 0 1px 0 0 #046ca3, 0 -1px 0 0 #046ca3;
-	margin-bottom: 1px;
-    float: left;
-    width: 40%;
-    background-color: #8698E8;
-    background-position:left;
-    font-size:24px;
-
-}
-.game2
-{
-    border-top: 2px dashed #046ca3;
-	border-bottom: 1px dashed #046ca3;
-        box-shadow: inset 0 -1px 0 0 #046ca3, inset 0 1px 0 0 #046ca3, 0 1px 0 0 #046ca3, 0 -1px 0 0 #046ca3;
-	margin-bottom: 1px;
-    float: left;
-    margin-left: 20%;
-    width: 40%;
-    background-color: #8698E8;    font-size:24px;
-}
-.game3 {
-border-top: 2px dashed #046ca3;
-	border-bottom: 1px dashed #046ca3;
-        box-shadow: inset 0 -1px 0 0 #046ca3, inset 0 1px 0 0 #046ca3, 0 1px 0 0 #046ca3, 0 -1px 0 0 #046ca3;
-	margin-bottom: 1px;    float: left;
-    width: 40%;
-    background-color: #8698E8;    font-size: 24px;
-}
-.game4
-{
-border-top: 2px dashed #046ca3;
-	border-bottom: 1px dashed #046ca3;
-        box-shadow: inset 0 -1px 0 0 #046ca3, inset 0 1px 0 0 #046ca3, 0 1px 0 0 #046ca3, 0 -1px 0 0 #046ca3;
-	margin-bottom: 1px;    float: left;
-    margin-left: 20%;
-    width: 40%;
-    background-color: #8698E8;    font-size:24px;
 }
 
 .pageFooter

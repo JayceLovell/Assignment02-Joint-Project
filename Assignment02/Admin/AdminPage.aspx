@@ -18,7 +18,7 @@
                     </asp:DropDownList>
                 </div>
                 <asp:GridView ID="GamesGridView" runat="server" AutoGenerateColumns="false" 
-                    CssClass="table table-bordered table-striped table-hover" DataKeyNames="GameID" 
+                    CssClass="table table-bordered table-hover" BackColor="White" DataKeyNames="GameID" 
                     OnRowDeleting="GamesGridView_RowDeleting" AllowPaging="true" PageSize="4" 
                     OnPageIndexChanging="GamesGridView_PageIndexChanging" AllowSorting="true" 
                     OnSorting="GamesGridView_Sorting" OnRowDataBound="GamesGridView_RowDataBound" 

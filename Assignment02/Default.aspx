@@ -1,80 +1,84 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Assignment02.Default" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container text-center">
+    <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-offset-4 col-md-4">
                 <h1>This Month Games</h1>
-                <br />
-                <br />
             </div>
         </div>
-<!--
-        <div class="game1">
-                <h2>Game 1</h2>
-                    <img src="Assets/Images/indianLogo.jpg"  width="35"/>
-                    <asp:Label ID="TeamName1lbl" runat="server"></asp:Label>
-                <h3>VS</h3>
-                    <img src="Assets/Images/bangladeshLogo.jpg" width="35"/>
-                    <asp:Label ID="TeamName2lbl" runat="server"></asp:Label>
-                <h3>Score</h3>
-                    <asp:Label ID="Game1Team1Score" runat="server"></asp:Label>
-                    <asp:Label ID="Game1Team1Outs" runat="server"></asp:Label>
+        <br />
+        <br />
+        <div class="row">
+            <div id="Game1" class="col-md-offset-1 col-md-4">
+                <img runat="server" id="Game1Team1Logo" alt="Team1 Logo" src="Assets/Images/No-Image.jpg" />
+                <label class="control-label" id="Game1Team1Name" runat="server">No Info</label>
+                <h3> VS </h3>
+                <img runat="server" id="Game1Team2Logo" alt="Team2 Logo" src="~/Assets/Images/No-Image.jpg" />
+                <label class="control-label" id="Game1Team2Name" runat="server">No Info</label>
+                <h4> Statistics: </h4>
+                <label class="control-label" id="Game1Team1Runs" runat="server">No Info</label>
+                <label class="control-label" id="Game1Team1Outs" runat="server">No Info</label>
                 <br />
-                    <asp:Label ID="Game1Team2Score" runat="server"></asp:Label>
-                    <asp:Label ID="Game1Team2Outs" runat="server"></asp:Label>
-                <h3>Spectators</h3>
-                    <asp:Label ID="Game1Spectators" runat="server"></asp:Label>
+                <label class="control-label" id="Game1Team2Runs" runat="server">No Info</label>
+                <label class="control-label" id="Game1Team2Outs" runat="server">No Info</label>
+                <br />
+                <label class="control-label" id="Game1Spectators" runat="server"></label>
             </div>
-  
-    <div class="game2">
-        <h2>Game 2</h2>
-                    <img src="Assets/Images/westIndiesLogo.png"  width="35"/>
-                    <asp:Label ID="TeamName1lbl1" runat="server"></asp:Label>
-                <h3>VS</h3>
-                    <img src="Assets/Images/southAfricaLogo.gif" width="35"/>
-                    <asp:Label ID="TeamName2lbl1" runat="server"></asp:Label>
-                <h3>Score</h3>
-                    <asp:Label ID="Game1Team1Score1" runat="server"></asp:Label>
-                    <asp:Label ID="Game1Team1Outs1" runat="server"></asp:Label>
+            <div id="Game2" class="col-md-offset-1 col-md-4">
+                <img runat="server" id="Game2Team1Logo" alt="Team1 Logo" src="Assets/Images/No-Image.jpg" />
+                <label class="control-label" id="Game2Team1Name" runat="server">No Info</label>
+                <h3> VS </h3>
+                <img runat="server" id="Game2Team2Logo" alt="Team2 Logo" src="~/Assets/Images/No-Image.jpg" />
+                <label class="control-label" id="Game2Team2Name" runat="server">No Info</label>
+                <h4> Statistics: </h4>
+                <label class="control-label" id="Game2Team1Runs" runat="server">No Info</label>
+                <label class="control-label" id="Game2Team1Outs" runat="server">No Info</label>
                 <br />
-                    <asp:Label ID="Game1Team2Score1" runat="server"></asp:Label>
-                    <asp:Label ID="Game1Team2Outs1" runat="server"></asp:Label>
-                <h3>Spectators</h3>
-                    <asp:Label ID="Game1Spectators1" runat="server"></asp:Label>
-    </div>
-      <div class="game3">
-        <h2>Game 3</h2>
-                    <img src="Assets/Images/australiaLogo.ico"  width="35"/>
-                    <asp:Label ID="TeamName1lbl2" runat="server"></asp:Label>
-                <h3>VS</h3>
-                    <img src="Assets/Images/newZealandLogo.png" width="35"/>
-                    <asp:Label ID="TeamName2lbl2" runat="server"></asp:Label>
-                <h3>Score</h3>
-                    <asp:Label ID="Game1Team1Score2" runat="server"></asp:Label>
-                    <asp:Label ID="Game1Team1Outs2" runat="server"></asp:Label>
+                <label class="control-label" id="Game2Team2Runs" runat="server">No Info</label>
+                <label class="control-label" id="Game2Team2Outs" runat="server">No Info</label>
                 <br />
-                    <asp:Label ID="Game1Team2Score2" runat="server"></asp:Label>
-                    <asp:Label ID="Game1Team2Outs2" runat="server"></asp:Label>
-                <h3>Spectators</h3>
-                    <asp:Label ID="Game1Spectators2" runat="server"></asp:Label>
-
-    </div>
-
-    <div class="game4">
-        <h2>Game 4</h2>
-                   <img src="Assets/Images/pakistanLogo.jpg"  width="35"/>
-                    <asp:Label ID="TeamName1lbl3" runat="server"></asp:Label>
-                <h3>VS</h3>
-                    <img src="Assets/Images/englandLogo.jpeg" width="35"/>
-                    <asp:Label ID="TeamName2lbl3" runat="server"></asp:Label>
-                <h3>Score</h3>
-                    <asp:Label ID="Game1Team1Score3" runat="server"></asp:Label>
-                    <asp:Label ID="Game1Team1Outs3" runat="server"></asp:Label>
+                <label class="control-label" id="Game2Spectators" runat="server"></label>
+            </div>
+        </div>
+        <div class="row">
+            <div id="Game3" class="col-md-offset-1 col-md-4">
+                <img runat="server" id="Game3Team1Logo" alt="Team1 Logo" src="Assets/Images/No-Image.jpg" />
+                <label class="control-label" id="Game3Team1Name" runat="server">No Info</label>
+                <h3> VS </h3>
+                <img runat="server" id="Game3Team2Logo" alt="Team2 Logo" src="~/Assets/Images/No-Image.jpg" />
+                <label class="control-label" id="Game3Team2Name" runat="server">No Info</label>
+                <h4> Statistics: </h4>
+                <label class="control-label" id="Game3Team1Runs" runat="server">No Info</label>
+                <label class="control-label" id="Game3Team1Outs" runat="server">No Info</label>
                 <br />
-                    <asp:Label ID="Game1Team2Score3" runat="server"></asp:Label>
-                    <asp:Label ID="Game1Team2Outs3" runat="server"></asp:Label>
-                <h3>Spectators</h3>
-                    <asp:Label ID="Game1Spectators3" runat="server"></asp:Label>
-    </div>-->
+                <label class="control-label" id="Game3Team2Runs" runat="server">No Info</label>
+                <label class="control-label" id="Game3Team2Outs" runat="server">No Info</label>
+                <br />
+                <label class="control-label" id="Game3Spectators" runat="server"></label>
+                </div>
+                <div id="Game4" class="col-md-offset-1 col-md-4">
+                    <img runat="server" id="Game4Team1Logo" alt="Team1 Logo" src="Assets/Images/No-Image.jpg" />
+                    <label class="control-label" id="Game4Team1Name" runat="server">No Info</label>
+                    <h3> VS </h3>
+                    <img runat="server" id="Game4Team2Logo" alt="Team2 Logo" src="~/Assets/Images/No-Image.jpg" />
+                    <label class="control-label" id="Game4Team2Name" runat="server">No Info</label>
+                    <h4> Statistics: </h4>
+                    <label class="control-label" id="Game4Team1Runs" runat="server">No Info</label>
+                    <label class="control-label" id="Game4Team1Outs" runat="server">No Info</label>
+                    <br />
+                    <label class="control-label" id="Game4Team2Runs" runat="server">No Info</label>
+                    <label class="control-label" id="Game4Team2Outs" runat="server">No Info</label>
+                    <br />
+                    <label class="control-label" id="Game4Spectators" runat="server"></label>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-1 col-md-4">
+                <button class="btn btn-lg btn-block" disabled="disabled" runat="server" id="PreviousButton" onserverclick="PreviousButton_ServerClick"><i class="fa fa-backward" aria-hidden="true"></i> Previous</button>
+            </div>
+            <div class="col-md-offset-1 col-md-4">
+                <button class="btn btn-lg btn-block" disabled="disabled" runat="server" id="NextButton" onserverclick="NextButton_ServerClick"><i class="fa fa-forward" aria-hidden="true"></i> Next</button>
+            </div>
+        </div>
     </div>
 </asp:Content>
