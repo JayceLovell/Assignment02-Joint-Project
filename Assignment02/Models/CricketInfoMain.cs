@@ -28,7 +28,6 @@ namespace Assignment02.Models
 
         public int Spectators { get; set; }
 
-        [Column(TypeName = "date")]
-        public DateTime DateEntered { get; set; }
+        public DateTime? DateEntered { get; set; }
     }
 }
