@@ -51,7 +51,12 @@ namespace Assignment02
 
         protected void PageSizeDropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // set the new Page size
+            GamesGridView.PageSize = Convert.ToInt32(PageSizeDropDownList.SelectedValue);
 
+            // refresh the GridView
+
+            this.GetGames();
         }
 
         protected void GamesGridView_PageIndexChanging(object sender, GridViewPageEventArgs e)
