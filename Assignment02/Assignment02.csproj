@@ -134,7 +134,7 @@
     <Content Include="Assets\Images\NewZealand.jpg" />
     <Content Include="Assets\Images\No-Image.jpg" />
     <Content Include="Assets\Images\Pakistan.jpg" />
-    <Content Include="Assets\Images\South Africa.gif" />
+    <Content Include="Assets\Images\South Africa.jpg" />
     <Content Include="Assets\Images\West Indies.jpg" />
     <Content Include="packages.config" />
     <Content Include="Register.aspx" />

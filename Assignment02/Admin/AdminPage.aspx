@@ -37,7 +37,7 @@
                             ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>
                 </asp:GridView>
-                <a class="btn btn-primary btn-lg" id="Refreshing" onserverclick="Refreshing_ServerClick" runat="server" UseSubmitBehavior="false" CausesValidation="false"><i class="fa fa-cog fa-spin fa-refresh"></i> Refresh</a>
+                <a class="btn btn-primary btn-lg" id="Refreshing" onserverclick="Refreshing_ServerClick" runat="server" UseSubmitBehavior="false" CausesValidation="false"><i class="fa fa-cog fa-spin fa-refresh"></i> Refreshing....</a>
             </div>
         </div>
     </div>
