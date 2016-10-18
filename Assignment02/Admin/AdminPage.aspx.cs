@@ -133,5 +133,10 @@ namespace Assignment02
                 this.GetGames();
             }
         }
+
+        protected void Refreshing_ServerClick(object sender, EventArgs e)
+        {
+            this.GetGames();
+        }
     }
 }

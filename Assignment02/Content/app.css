@@ -18,7 +18,8 @@ body {
 }
 #Game1Team1Logo,#Game1Team2Logo,#Game2Team1Logo,#Game2Team2Logo,#Game3Team1Logo,#Game3Team2Logo,#Game4Team1Logo,#Game4Team2Logo
 {
-
+    height:50px;
+    width:50px;
 }
 #Usernametxt,#Passwordtxt,#LoginButton{
     height:50px;
