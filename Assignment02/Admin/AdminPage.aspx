@@ -24,7 +24,7 @@
                     OnSorting="GamesGridView_Sorting" OnRowDataBound="GamesGridView_RowDataBound" 
                     PagerStyle-CssClass="pagination-ys">
                     <Columns>
-                        <!--<asp:BoundField DataField="GameID" HeaderText="Game ID" Visible="true" SortExpression="GameID" />-->
+                        <asp:BoundField DataField="GameID" HeaderText="Game ID" Visible="true" SortExpression="GameID" />
                         <asp:BoundField DataField="Team_1_Name" HeaderText="Team1 Name" Visible="true" SortExpression="Team_1_Name" />
                         <asp:BoundField DataField="Team_2_Name" HeaderText="Team2 Name" Visible="true" SortExpression="Team_2_Name" />
                         <asp:BoundField DataField="Team_1_Runs" HeaderText="Team1 Runs" Visible="true" SortExpression="Team_1_Runs"/>
