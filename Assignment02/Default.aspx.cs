@@ -29,7 +29,6 @@ namespace Assignment02
         /// </summary
         private void GetGameData()
         {
-            /*
             // connect to EF DB
             using (CricketInfo db = new CricketInfo())
             {
@@ -97,8 +96,8 @@ namespace Assignment02
                 Game1Team2Outs3.Text = team8.FirstOrDefault().BATSMANOUT.ToString() + " outs";
                 Game1Spectators3.Text = team8.FirstOrDefault().SPECTATORS.ToString();
 
+
             }
-            */
         }
     }
 }

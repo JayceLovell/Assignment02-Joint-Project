@@ -9,7 +9,4 @@ $(document).ready(function () {
     $("#name").click(function () {
         return confirm("Are you Sure you want to logout?");
     })
-    $("a.btn.btn-danger.btn-sm").click(function(){
-    return confirm("Are you Sure you want to permnamently delete this?");
-    })
 })
