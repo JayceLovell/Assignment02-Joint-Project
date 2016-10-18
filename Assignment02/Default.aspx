@@ -8,6 +8,7 @@
                 <br />
             </div>
         </div>
+<!--
         <div class="game1">
                 <h2>Game 1</h2>
                     <img src="Assets/Images/indianLogo.jpg"  width="35"/>
@@ -74,6 +75,6 @@
                     <asp:Label ID="Game1Team2Outs3" runat="server"></asp:Label>
                 <h3>Spectators</h3>
                     <asp:Label ID="Game1Spectators3" runat="server"></asp:Label>
-    </div>
+    </div>-->
     </div>
 </asp:Content>

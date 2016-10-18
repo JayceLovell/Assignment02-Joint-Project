@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Assignment02
+namespace Assignment02.Admin
 {
 
 
-    public partial class AdminPage
+    public partial class AddGame
     {
     }
 }
