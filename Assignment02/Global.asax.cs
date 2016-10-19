@@ -10,14 +10,14 @@ namespace Assignment02
 {
     public class Global : System.Web.HttpApplication
     {
-        public static int RowID = 0;;
+        public static int RowID = 1;
         protected void Application_Start(object sender, EventArgs e)
         {
             Debug.WriteLine("Application Started....");
         }
         protected void Session_Start(object sender, EventArgs e)
         {
-            RowID = 0;
+            RowID = 1;
         }
     }
 }

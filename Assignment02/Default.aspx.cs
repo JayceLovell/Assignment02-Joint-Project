@@ -14,7 +14,7 @@ namespace Assignment02
 {
     public partial class Default : System.Web.UI.Page
     {
-        private int _rowid=0;
+        private int _rowid=1;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,7 +26,7 @@ namespace Assignment02
             {
                 //Get the Game data
                 this.GetGameData();
-                _rowid = 0;
+                _rowid = 1;
             }
             else
             {
