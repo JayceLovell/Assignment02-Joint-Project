@@ -24,9 +24,11 @@ namespace Assignment02
             {
                 //Get the Game data
                 this.GetGameData();
+            }
+            else
+            {
                 _rowid = 0;
             }
-            Global.RowID = 0;
         }
 
         /// <summary
