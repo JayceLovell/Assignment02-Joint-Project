@@ -83,6 +83,7 @@ namespace Assignment02.Admin
                 newGame.Team_2_Outs = Convert.ToInt32(Team2Out.Text);
                 newGame.Team_2_Runs = Convert.ToInt32(Team2Runs.Text);
                 newGame.Spectators = Convert.ToInt32(Spectators.Text);
+                newGame.DateEntered = DateTime.Now;
 
                 // use LINQ to ADO.NET to add / insert new game into the db
 

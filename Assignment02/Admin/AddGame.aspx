@@ -2,7 +2,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col-md-offset-3 col-md-6 text-center">
+            <div class="col-md-offset-3 col-md-4 text-center">
                 <h1>Add more Games</h1>
                 <h5>Make sure you fill all fields Admin.</h5>
                 <br />

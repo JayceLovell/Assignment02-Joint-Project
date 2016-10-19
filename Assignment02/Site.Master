@@ -34,7 +34,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" id="logo" href="~/Default.aspx">
+                        <a class="navbar-brand" id="logo" href="../Default.aspx">
                             <img alt="Combine logo of both developers" src="../Assets/Images/combine_logo.jpg" />
                         </a>
                     </div>
