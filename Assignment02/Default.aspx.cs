@@ -18,6 +18,8 @@ namespace Assignment02
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Console.WriteLine("rowid is " + _rowid);
+            Console.WriteLine("Global rowid is " + Global.RowID);
             // if loading the page for the first time
             // populate the Game Page
             if (!IsPostBack)

@@ -10,7 +10,7 @@ namespace Assignment02
 {
     public class Global : System.Web.HttpApplication
     {
-        public static int RowID;
+        public static int RowID = 0;;
         protected void Application_Start(object sender, EventArgs e)
         {
             Debug.WriteLine("Application Started....");
