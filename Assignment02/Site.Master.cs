@@ -53,6 +53,7 @@ namespace Assignment02
                     break;
                 case "Register":
                     register.Attributes.Add("class", "active");
+                    NotLoginHolder.Visible = false;
                     break;
                 case "About":
                     register.Attributes.Add("class", "active");
