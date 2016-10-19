@@ -71,7 +71,7 @@
                     <br />
                     <label class="control-label" id="Game4Spectators" runat="server"></label>
                 </div>
-        </div>
+            </div>
         <div class="row">
             <div class="col-md-offset-1 col-md-4">
                 <button class="btn btn-lg btn-block" disabled="disabled" runat="server" id="PreviousButton" onserverclick="PreviousButton_ServerClick"><i class="fa fa-backward" aria-hidden="true"></i> Previous</button>
