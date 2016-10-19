@@ -14,7 +14,6 @@ namespace Assignment02
         protected void Application_Start(object sender, EventArgs e)
         {
             Debug.WriteLine("Application Started....");
-            RowID = 1;
         }
     }
 }
