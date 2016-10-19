@@ -14,12 +14,13 @@ namespace Assignment02
 {
     public partial class Default : System.Web.UI.Page
     {
-        public int rowid=1;
+        private int _rowid=Global.RowID;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            // if loading the page for teh first time
+            // if loading the page for the first time
             // populate the Game Page
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 //Get the Game data
                 this.GetGameData();
@@ -36,86 +37,156 @@ namespace Assignment02
             {
                 for (int Slot = 1; Slot <= 4; Slot++)
                 {
+                    Debug.WriteLine("rowid is " + _rowid);
+                    Debug.WriteLine("Size of table " + db.CricketInfoMains.Count());
                     //run a loop to enter the data in each lable on the page
                     var Gameinfo = (from game in db.CricketInfoMains
-                                    where game.GameID == rowid
+                                    where game.GameID == _rowid
                                     select game);
-                    //put the information onto the main page
-                    switch(Slot)
+
+                    if (_rowid <= db.CricketInfoMains.Count())
                     {
-                        case 1:
-                            // fill out game 1
-                            Game1Team1Name.InnerText = Gameinfo.FirstOrDefault().Team_1_Name.ToString();
-                            Game1Team1Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_1_Name.ToString() + ".jpg");
-                            Game1Team1Outs.InnerText = Gameinfo.FirstOrDefault().Team_1_Outs.ToString();
-                            Game1Team1Runs.InnerText = Gameinfo.FirstOrDefault().Team_1_Runs.ToString() + " runs/ ";
-                            Game1Team2Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_2_Name.ToString() + ".jpg");
-                            Game1Team2Name.InnerText = Gameinfo.FirstOrDefault().Team_2_Name.ToString();
-                            Game1Team2Outs.InnerText = Gameinfo.FirstOrDefault().Team_2_Outs.ToString();
-                            Game1Team2Runs.InnerText = Gameinfo.FirstOrDefault().Team_2_Runs.ToString() + " runs/ ";
-                            Game1Spectators.InnerText = "Specators: "+Gameinfo.FirstOrDefault().Spectators.ToString();
-                            break;
-                        case 2:
-                            // fill out game 2
-                            Game2Team1Name.InnerText = Gameinfo.FirstOrDefault().Team_1_Name.ToString();
-                            Game2Team1Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_1_Name.ToString() + ".jpg");
-                            Game2Team1Outs.InnerText = Gameinfo.FirstOrDefault().Team_1_Outs.ToString();
-                            Game2Team1Runs.InnerText = Gameinfo.FirstOrDefault().Team_1_Runs.ToString() + " runs/ ";
-                            Game2Team2Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_2_Name.ToString() + ".jpg");
-                            Game2Team2Name.InnerText = Gameinfo.FirstOrDefault().Team_2_Name.ToString();
-                            Game2Team2Outs.InnerText = Gameinfo.FirstOrDefault().Team_2_Outs.ToString();
-                            Game2Team2Runs.InnerText = Gameinfo.FirstOrDefault().Team_2_Runs.ToString() + " runs/ ";
-                            Game2Spectators.InnerText = "Specators: " + Gameinfo.FirstOrDefault().Spectators.ToString();
-                            break;
-                        case 3:
-                            // fill out game 3
-                            Game3Team1Name.InnerText = Gameinfo.FirstOrDefault().Team_1_Name.ToString();
-                            Game3Team1Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_1_Name.ToString() + ".jpg");
-                            Game3Team1Outs.InnerText = Gameinfo.FirstOrDefault().Team_1_Outs.ToString();
-                            Game3Team1Runs.InnerText = Gameinfo.FirstOrDefault().Team_1_Runs.ToString() + " runs/ ";
-                            Game3Team2Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_2_Name.ToString() + ".jpg");
-                            Game3Team2Name.InnerText = Gameinfo.FirstOrDefault().Team_2_Name.ToString();
-                            Game3Team2Outs.InnerText = Gameinfo.FirstOrDefault().Team_2_Outs.ToString();
-                            Game3Team2Runs.InnerText = Gameinfo.FirstOrDefault().Team_2_Runs.ToString() + " runs/ ";
-                            Game3Spectators.InnerText = "Specators: " + Gameinfo.FirstOrDefault().Spectators.ToString();
-                            break;
-                        case 4:
-                            //fil out game 4
-                            Game4Team1Name.InnerText = Gameinfo.FirstOrDefault().Team_1_Name.ToString();
-                            Game4Team1Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_1_Name.ToString() + ".jpg");
-                            Game4Team1Outs.InnerText = Gameinfo.FirstOrDefault().Team_1_Outs.ToString();
-                            Game4Team1Runs.InnerText = Gameinfo.FirstOrDefault().Team_1_Runs.ToString() + " runs/ ";
-                            Game4Team2Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_2_Name.ToString() + ".jpg");
-                            Game4Team2Name.InnerText = Gameinfo.FirstOrDefault().Team_2_Name.ToString();
-                            Game4Team2Outs.InnerText = Gameinfo.FirstOrDefault().Team_2_Outs.ToString();
-                            Game4Team2Runs.InnerText = Gameinfo.FirstOrDefault().Team_2_Runs.ToString() + " runs/ ";
-                            Game4Spectators.InnerText = "Specators: " + Gameinfo.FirstOrDefault().Spectators.ToString();
-                            break;
+                        //put the information onto the main page
+                        switch (Slot)
+                        {
+                            case 1:
+                                // fill out game 1
+                                Game1Team1Name.InnerText = Gameinfo.FirstOrDefault().Team_1_Name.ToString();
+                                Game1Team1Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_1_Name.ToString() + ".jpg");
+                                Game1Team1Outs.InnerText = Gameinfo.FirstOrDefault().Team_1_Outs.ToString();
+                                Game1Team1Runs.InnerText = Gameinfo.FirstOrDefault().Team_1_Runs.ToString() + " runs/ ";
+                                Game1Team2Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_2_Name.ToString() + ".jpg");
+                                Game1Team2Name.InnerText = Gameinfo.FirstOrDefault().Team_2_Name.ToString();
+                                Game1Team2Outs.InnerText = Gameinfo.FirstOrDefault().Team_2_Outs.ToString();
+                                Game1Team2Runs.InnerText = Gameinfo.FirstOrDefault().Team_2_Runs.ToString() + " runs/ ";
+                                Game1Spectators.InnerText = "Specators: " + Gameinfo.FirstOrDefault().Spectators.ToString();
+                                if (Gameinfo.FirstOrDefault().Team_1_Runs > Gameinfo.FirstOrDefault().Team_2_Runs)
+                                {
+                                    Game1Winner.InnerText = Gameinfo.FirstOrDefault().Team_1_Name;
+                                }
+                                else if (Gameinfo.FirstOrDefault().Team_1_Runs < Gameinfo.FirstOrDefault().Team_2_Runs)
+                                {
+                                    Game1Winner.InnerText = Gameinfo.FirstOrDefault().Team_2_Name;
+                                }
+                                else
+                                {
+
+                                }
+                                break;
+                            case 2:
+                                // fill out game 2
+                                Game2Team1Name.InnerText = Gameinfo.FirstOrDefault().Team_1_Name.ToString();
+                                Game2Team1Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_1_Name.ToString() + ".jpg");
+                                Game2Team1Outs.InnerText = Gameinfo.FirstOrDefault().Team_1_Outs.ToString();
+                                Game2Team1Runs.InnerText = Gameinfo.FirstOrDefault().Team_1_Runs.ToString() + " runs/ ";
+                                Game2Team2Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_2_Name.ToString() + ".jpg");
+                                Game2Team2Name.InnerText = Gameinfo.FirstOrDefault().Team_2_Name.ToString();
+                                Game2Team2Outs.InnerText = Gameinfo.FirstOrDefault().Team_2_Outs.ToString();
+                                Game2Team2Runs.InnerText = Gameinfo.FirstOrDefault().Team_2_Runs.ToString() + " runs/ ";
+                                Game2Spectators.InnerText = "Specators: " + Gameinfo.FirstOrDefault().Spectators.ToString();
+                                if (Gameinfo.FirstOrDefault().Team_1_Runs > Gameinfo.FirstOrDefault().Team_2_Runs)
+                                {
+                                    Game2Winner.InnerText = Gameinfo.FirstOrDefault().Team_1_Name;
+                                }
+                                else if (Gameinfo.FirstOrDefault().Team_1_Runs < Gameinfo.FirstOrDefault().Team_2_Runs)
+                                {
+                                    Game2Winner.InnerText = Gameinfo.FirstOrDefault().Team_2_Name;
+                                }
+                                else
+                                {
+
+                                }
+                                break;
+                            case 3:
+                                // fill out game 3
+                                Game3Team1Name.InnerText = Gameinfo.FirstOrDefault().Team_1_Name.ToString();
+                                Game3Team1Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_1_Name.ToString() + ".jpg");
+                                Game3Team1Outs.InnerText = Gameinfo.FirstOrDefault().Team_1_Outs.ToString();
+                                Game3Team1Runs.InnerText = Gameinfo.FirstOrDefault().Team_1_Runs.ToString() + " runs/ ";
+                                Game3Team2Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_2_Name.ToString() + ".jpg");
+                                Game3Team2Name.InnerText = Gameinfo.FirstOrDefault().Team_2_Name.ToString();
+                                Game3Team2Outs.InnerText = Gameinfo.FirstOrDefault().Team_2_Outs.ToString();
+                                Game3Team2Runs.InnerText = Gameinfo.FirstOrDefault().Team_2_Runs.ToString() + " runs/ ";
+                                Game3Spectators.InnerText = "Specators: " + Gameinfo.FirstOrDefault().Spectators.ToString();
+                                if (Gameinfo.FirstOrDefault().Team_1_Runs > Gameinfo.FirstOrDefault().Team_2_Runs)
+                                {
+                                    Game3Winner.InnerText = Gameinfo.FirstOrDefault().Team_1_Name;
+                                }
+                                else if (Gameinfo.FirstOrDefault().Team_1_Runs < Gameinfo.FirstOrDefault().Team_2_Runs)
+                                {
+                                    Game3Winner.InnerText = Gameinfo.FirstOrDefault().Team_2_Name;
+                                }
+                                else
+                                {
+
+                                }
+                                break;
+                            case 4:
+                                //fil out game 4
+                                Game4Team1Name.InnerText = Gameinfo.FirstOrDefault().Team_1_Name.ToString();
+                                Game4Team1Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_1_Name.ToString() + ".jpg");
+                                Game4Team1Outs.InnerText = Gameinfo.FirstOrDefault().Team_1_Outs.ToString();
+                                Game4Team1Runs.InnerText = Gameinfo.FirstOrDefault().Team_1_Runs.ToString() + " runs/ ";
+                                Game4Team2Logo.Src = ResolveUrl("Assets/Images/" + Gameinfo.FirstOrDefault().Team_2_Name.ToString() + ".jpg");
+                                Game4Team2Name.InnerText = Gameinfo.FirstOrDefault().Team_2_Name.ToString();
+                                Game4Team2Outs.InnerText = Gameinfo.FirstOrDefault().Team_2_Outs.ToString();
+                                Game4Team2Runs.InnerText = Gameinfo.FirstOrDefault().Team_2_Runs.ToString() + " runs/ ";
+                                Game4Spectators.InnerText = "Specators: " + Gameinfo.FirstOrDefault().Spectators.ToString();
+                                if (Gameinfo.FirstOrDefault().Team_1_Runs > Gameinfo.FirstOrDefault().Team_2_Runs)
+                                {
+                                    Game4Winner.InnerText = Gameinfo.FirstOrDefault().Team_1_Name;
+                                }
+                                else if (Gameinfo.FirstOrDefault().Team_1_Runs < Gameinfo.FirstOrDefault().Team_2_Runs)
+                                {
+                                    Game4Winner.InnerText = Gameinfo.FirstOrDefault().Team_2_Name;
+                                }
+                                else
+                                {
+
+                                }
+                                break;
+                        }
                     }
-                    rowid++;
-                }
-                if(db.CricketInfoMains.Count()>rowid)
-                {
-                    NextButton.Disabled = false;
-                }
-                else
-                {
-                    NextButton.Disabled = true;
-                }
-                if(rowid<4)
-                {
-                    PreviousButton.Disabled = false;
-                }
-                else
-                {
-                    PreviousButton.Disabled = true;
+                    else
+                    {
+                        Slot = 4;
+                    }
+                    if (db.CricketInfoMains.Count() > _rowid)
+                    {
+                        NextButton.Disabled = false;
+                    }
+                    else
+                    {
+                        NextButton.Disabled = true;
+                    }
+                    if (_rowid > 4)
+                    {
+                        PreviousButton.Disabled = false;
+                    }
+                    else
+                    {
+                        PreviousButton.Disabled = true;
+                    }
+                    _rowid++;
                 }
             }
+            Global.RowID = _rowid;
         }
 
         protected void PreviousButton_ServerClick(object sender, EventArgs e)
         {
-            rowid -= 4;
+            if(_rowid>12)
+            {
+                _rowid = 8;
+            }
+            else if(_rowid>8)
+            {
+                _rowid = 4;
+            }
+            else if(_rowid>4)
+            {
+                _rowid = 1;
+            }
             GetGameData();
         }
 

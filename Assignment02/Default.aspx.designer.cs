@@ -94,6 +94,15 @@ namespace Assignment02 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game1Spectators;
         
         /// <summary>
+        /// Game1Winner control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game1Winner;
+        
+        /// <summary>
         /// Game2Team1Logo control.
         /// </summary>
         /// <remarks>
@@ -173,6 +182,15 @@ namespace Assignment02 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game2Spectators;
+        
+        /// <summary>
+        /// Game2Winner control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game2Winner;
         
         /// <summary>
         /// Game3Team1Logo control.
@@ -256,6 +274,15 @@ namespace Assignment02 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game3Spectators;
         
         /// <summary>
+        /// Game3Winner control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game3Winner;
+        
+        /// <summary>
         /// Game4Team1Logo control.
         /// </summary>
         /// <remarks>
@@ -335,6 +362,15 @@ namespace Assignment02 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game4Spectators;
+        
+        /// <summary>
+        /// Game4Winner control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Game4Winner;
         
         /// <summary>
         /// PreviousButton control.

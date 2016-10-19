@@ -23,6 +23,8 @@
                 <label class="control-label" id="Game1Team2Outs" runat="server">No Info</label>
                 <br />
                 <label class="control-label" id="Game1Spectators" runat="server"></label>
+                <h4><i class="fa fa-trophy" aria-hidden="true"></i> Winner <i class="fa fa-trophy" aria-hidden="true"></i></h4>
+                <label class="control-label" id="Game1Winner" runat="server"></label>
             </div>
             <div id="Game2" class="col-md-offset-1 col-md-4">
                 <img runat="server" id="Game2Team1Logo" alt="Team1 Logo" src="Assets/Images/No-Image.jpg" />
@@ -38,6 +40,8 @@
                 <label class="control-label" id="Game2Team2Outs" runat="server">No Info</label>
                 <br />
                 <label class="control-label" id="Game2Spectators" runat="server"></label>
+                <h4><i class="fa fa-trophy" aria-hidden="true"></i> Winner <i class="fa fa-trophy" aria-hidden="true"></i></h4>
+                <label class="control-label" id="Game2Winner" runat="server"></label>
             </div>
         </div>
         <div class="row">
@@ -55,6 +59,8 @@
                 <label class="control-label" id="Game3Team2Outs" runat="server">No Info</label>
                 <br />
                 <label class="control-label" id="Game3Spectators" runat="server"></label>
+                <h4><i class="fa fa-trophy" aria-hidden="true"></i> Winner <i class="fa fa-trophy" aria-hidden="true"></i></h4>
+                <label class="control-label" id="Game3Winner" runat="server"></label>
                 </div>
                 <div id="Game4" class="col-md-offset-1 col-md-4">
                     <img runat="server" id="Game4Team1Logo" alt="Team1 Logo" src="Assets/Images/No-Image.jpg" />
@@ -70,6 +76,8 @@
                     <label class="control-label" id="Game4Team2Outs" runat="server">No Info</label>
                     <br />
                     <label class="control-label" id="Game4Spectators" runat="server"></label>
+                    <h4><i class="fa fa-trophy" aria-hidden="true"></i> Winner <i class="fa fa-trophy" aria-hidden="true"></i></h4>
+                    <label class="control-label" id="Game4Winner" runat="server"></label>
                 </div>
             </div>
         <div class="row">

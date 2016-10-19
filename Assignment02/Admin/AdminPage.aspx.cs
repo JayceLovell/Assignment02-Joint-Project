@@ -136,7 +136,7 @@ namespace Assignment02
 
         protected void Refreshing_ServerClick(object sender, EventArgs e)
         {
-            this.GetGames();
+            Response.Redirect("~/Admin/AdminPage.aspx");
         }
     }
 }
