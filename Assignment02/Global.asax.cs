@@ -15,5 +15,9 @@ namespace Assignment02
         {
             Debug.WriteLine("Application Started....");
         }
+        protected void Session_Start(object sender, EventArgs e)
+        {
+            RowID = 0;
+        }
     }
 }
