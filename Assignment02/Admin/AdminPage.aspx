@@ -33,6 +33,10 @@
                         <asp:BoundField DataField="Team_2_Outs" HeaderText="Team2 Outs" Visible="true" SortExpression="Team_2_Outs"/>
                         <asp:BoundField DataField="Spectators" HeaderText="Spectators" Visible="true" SortExpression="Spectators"/>
                         <asp:BoundField DataField="DateEntered" HeaderText="Date Entered" Visible="true" SortExpression="DateEntered"/>
+                        <asp:HyperLinkField Headertext="Update" Text="<i class='fa fa-pencil-square-o' aria-hidden='true'></i>Update"
+                             NavigateUrl="~/Admin/AddGame.aspx" ControlStyle-CssClass="btn btn-warning btn-sm"
+                             runat="server" DataNavigateUrlFields="GameID"
+                             DataNavigateUrlFormatString="AddGame.aspx?GameID={0}" />
                         <asp:CommandField HeaderText="Delete" DeleteText="<i class='fa fa-trash-o fa-lg'></i> Delete"
                             ShowDeleteButton="true" ButtonType="Link" ControlStyle-CssClass="btn btn-danger btn-sm" />
                     </Columns>

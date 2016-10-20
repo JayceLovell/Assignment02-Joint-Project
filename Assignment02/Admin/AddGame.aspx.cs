@@ -43,7 +43,8 @@ namespace Assignment02.Admin
                     Team2Name.Text = updatedGame.Team_2_Name;
                     Team2Out.Text = updatedGame.Team_2_Outs.ToString();
                     Team2Runs.Text = updatedGame.Team_2_Runs.ToString();
-                    Spectators.Text = updatedGame.Spectators.ToString();                     
+                    Spectators.Text = updatedGame.Spectators.ToString();
+                    AddGameButton.Text = "Update Game";
                 }              
             }
         }
