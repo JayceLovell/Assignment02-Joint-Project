@@ -28,6 +28,11 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="EmailTextBox"
                         placeholder="example@example.com" TextMode="Email" required="true"></asp:TextBox>
                 </div>
+                <div class="form-group">
+                    <label class="control-label" for="PhoneNumberTextBox">PhoneNumber</label>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="PhoneNumberTextBox"
+                        phaceholder="###-###-####" TextMode="Phone"></asp:TextBox>
+                </div>
                 <div class="form-group text-center">
                     <asp:Button Text="Register" ID="RegisterButton" CssClass="btn btn-success btn-lg" runat="server" OnClick="RegisterButton_Click" />
                     <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-danger btn-lg" runat="server" OnClick="CancelButton_Click" />

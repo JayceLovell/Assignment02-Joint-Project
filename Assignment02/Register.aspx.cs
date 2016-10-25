@@ -29,7 +29,8 @@ namespace Assignment02
             var user = new IdentityUser()
             {
                 UserName = UserNameTextBox.Text,
-                Email = EmailTextBox.Text,
+                PhoneNumber = PhoneNumberTextBox.Text,
+                Email = EmailTextBox.Text
             };
 
             // create a new user in the db and store the results

@@ -13,7 +13,6 @@ namespace Assignment02.Models
         }
 
         public virtual DbSet<CricketInfoMain> CricketInfoMains { get; set; }
-        public virtual DbSet<CricketInfoBackUp> CricketInfoBackUps { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

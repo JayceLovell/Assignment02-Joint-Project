@@ -82,10 +82,11 @@
             </div>
         <div class="row">
             <div class="col-md-offset-1 col-md-4">
-                <button class="btn btn-lg btn-block" disabled="disabled" runat="server" id="PreviousButton" onserverclick="PreviousButton_ServerClick"><i class="fa fa-backward" aria-hidden="true"></i> Previous</button>
+                <button class="btn btn-lg btn-block" disabled="disabled" runat="server" id="PreviousButton" onserverclick="PreviousButton_ServerClick" title="To load last month games"><i class="fa fa-backward" aria-hidden="true"></i> Previous</button>
             </div>
             <div class="col-md-offset-1 col-md-4">
-                <button class="btn btn-lg btn-block" disabled="disabled" runat="server" id="NextButton" onserverclick="NextButton_ServerClick"><i class="fa fa-forward" aria-hidden="true"></i> Next</button>
+                <button class="btn btn-lg btn-block" disabled="disabled" runat="server" id="NextButton" onserverclick="NextButton_ServerClick" title="To load next month games"><i class="fa fa-forward" aria-hidden="true"></i> Next</button>
+                
             </div>
         </div>
     </div>

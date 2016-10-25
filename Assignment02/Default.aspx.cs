@@ -42,10 +42,9 @@ namespace Assignment02
             // connect to EF DB
             using (CricketInfo db = new CricketInfo())
             {
+                CleanFields();
                 for (int Slot = 1; Slot <= 4; Slot++)
                 {
-                    Debug.WriteLine("rowid is " + _rowid);
-                    Debug.WriteLine("Size of table " + db.CricketInfoMains.Count());
                     //run a loop to enter the data in each lable on the page
                     var Gameinfo = (from game in db.CricketInfoMains
                                     where game.GameID == _rowid
@@ -179,10 +178,71 @@ namespace Assignment02
             }
             Global.RowID = _rowid;
         }
+        /// <summary>
+        /// This method clears all the fields on the page
+        /// </summary>
+        private void CleanFields()
+        {
+            Game1Spectators.InnerText = "No Info";
+            Game1Team1Logo.Src = "Assets/Images/No-Image.jpg";
+            Game1Team1Name.InnerText = "No Info";
+            Game1Team1Outs.InnerText = "No Info";
+            Game1Team1Runs.InnerText = "No Info";
+            Game1Team2Logo.Src = "Assets/Images/No-Image.jpg";
+            Game1Team2Name.InnerText = "No Info";
+            Game1Team2Outs.InnerText = "No Info";
+            Game1Team2Runs.InnerText = "No Info";
+            Game1Team2Logo.Src = "Assets/Images/No-Image.jpg";
+            Game1Winner.InnerText = "No Info";
 
+            Game2Spectators.InnerText = "No Info";
+            Game2Team1Logo.Src = "Assets/Images/No-Image.jpg";
+            Game2Team1Name.InnerText = "No Info";
+            Game2Team1Outs.InnerText = "No Info";
+            Game2Team1Runs.InnerText = "No Info";
+            Game2Team2Logo.Src = "Assets/Images/No-Image.jpg";
+            Game2Team2Name.InnerText = "No Info";
+            Game2Team2Outs.InnerText = "No Info";
+            Game2Team2Runs.InnerText = "No Info";
+            Game2Team2Logo.Src = "Assets/Images/No-Image.jpg";
+            Game2Winner.InnerText = "No Info";
+
+            Game3Spectators.InnerText = "No Info";
+            Game3Team1Logo.Src = "Assets/Images/No-Image.jpg";
+            Game3Team1Name.InnerText = "No Info";
+            Game3Team1Outs.InnerText = "No Info";
+            Game3Team1Runs.InnerText = "No Info";
+            Game3Team2Logo.Src = "Assets/Images/No-Image.jpg";
+            Game3Team2Name.InnerText = "No Info";
+            Game3Team2Outs.InnerText = "No Info";
+            Game3Team2Runs.InnerText = "No Info";
+            Game3Team2Logo.Src = "Assets/Images/No-Image.jpg";
+            Game3Winner.InnerText = "No Info";
+
+            Game4Spectators.InnerText = "No Info";
+            Game4Team1Logo.Src = "Assets/Images/No-Image.jpg";
+            Game4Team1Name.InnerText = "No Info";
+            Game4Team1Outs.InnerText = "No Info";
+            Game4Team1Runs.InnerText = "No Info";
+            Game4Team2Logo.Src = "Assets/Images/No-Image.jpg";
+            Game4Team2Name.InnerText = "No Info";
+            Game4Team2Outs.InnerText = "No Info";
+            Game4Team2Runs.InnerText = "No Info";
+            Game4Team2Logo.Src = "Assets/Images/No-Image.jpg";
+            Game4Winner.InnerText = "No Info";
+        }
+        /// <summary>
+        /// Sets value of row id and calls GetGameData Function
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void PreviousButton_ServerClick(object sender, EventArgs e)
         {
-            if(_rowid>12)
+            if(_rowid>16)
+            {
+                _rowid = 12;
+            }
+            else if(_rowid>12)
             {
                 _rowid = 8;
             }
@@ -196,7 +256,11 @@ namespace Assignment02
             }
             GetGameData();
         }
-
+        /// <summary>
+        /// Just calls the GetGameData function
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void NextButton_ServerClick(object sender, EventArgs e)
         {
             GetGameData();
