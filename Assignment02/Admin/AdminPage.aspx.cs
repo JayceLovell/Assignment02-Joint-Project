@@ -118,6 +118,7 @@ namespace Assignment02
             // use EF and LINQ to find the selected game in the DB and remove it
             using (CricketInfo db = new CricketInfo())
             {
+                var current = db.CricketInfoMains.Count();
                 //create object to the game class and store the query inside of it
                 CricketInfoMain deletedgame = (from gameRecords in db.CricketInfoMains
                                      where gameRecords.GameID == GameID
@@ -128,7 +129,7 @@ namespace Assignment02
 
                 //save my changes back to the db
                 db.SaveChanges();
-                db.Database.ExecuteSqlCommand("DBCC CHECKIDENT('CricketInfoMain', RESEED, 0);");
+                db.Database.ExecuteSqlCommand("DBCC CHECKIDENT (CricketInfoMain, RESEED, "+(current-1)+")");
                 // refresh the grid
                 this.GetGames();
             }
