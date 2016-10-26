@@ -35,6 +35,8 @@ body {
     border-color: #7AE3FF;
     border-width:thick;
     background-image: url('../Assets/Images/backgroundTable.jpeg');
+    background-repeat:no-repeat;
+    background-size:auto;
     background-position:top;
 
 }
@@ -43,6 +45,8 @@ body {
     border-width:thick;
     border-color: #7AE3FF;
     background-image: url('../Assets/Images/backgroundTable.jpeg');
+    background-repeat:no-repeat;
+    background-size:auto;
     background-position:top;
 }
 #Game3{
@@ -50,6 +54,8 @@ body {
     border-color: #7AE3FF;
     background-image: url('../Assets/Images/backgroundTable.jpeg');
     border-width:thick;
+    background-repeat:no-repeat;
+    background-size:auto;
     background-position:top;
 }
 #Game4{
@@ -57,5 +63,7 @@ body {
     border-color: #7AE3FF;
     border-width:thick;
     background-image: url('../Assets/Images/backgroundTable.jpeg');
+    background-repeat:no-repeat;
+    background-size:auto;
     background-position:top;
 }
