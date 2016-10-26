@@ -124,6 +124,8 @@
     <Content Include="Admin\AddGame.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="Assets\Images\Australia.jpg" />
+    <Content Include="Assets\Images\backgroundTable.jpeg" />
+    <Content Include="Assets\Images\backgroundTable2.jpeg" />
     <Content Include="Assets\Images\Bangladesh.jpg" />
     <Content Include="Assets\Images\cricGameBack.jpg" />
     <Content Include="Assets\Images\England.jpg" />

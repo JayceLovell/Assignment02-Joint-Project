@@ -25,7 +25,7 @@
                 <label class="control-label" id="Game1Spectators" runat="server"></label>
                 <h4><i class="fa fa-trophy" aria-hidden="true"></i> Winner <i class="fa fa-trophy" aria-hidden="true"></i></h4>
                 <label class="control-label" id="Game1Winner" runat="server"></label>
-            </div>
+            </div>    
             <div id="Game2" class="col-md-offset-1 col-md-4">
                 <img runat="server" id="Game2Team1Logo" alt="Team1 Logo" src="Assets/Images/No-Image.jpg" />
                 <label class="control-label" id="Game2Team1Name" runat="server">No Info</label>
@@ -44,6 +44,7 @@
                 <label class="control-label" id="Game2Winner" runat="server"></label>
             </div>
         </div>
+        <br />
         <div class="row">
             <div id="Game3" class="col-md-offset-1 col-md-4">
                 <img runat="server" id="Game3Team1Logo" alt="Team1 Logo" src="Assets/Images/No-Image.jpg" />
@@ -80,6 +81,7 @@
                     <label class="control-label" id="Game4Winner" runat="server"></label>
                 </div>
             </div>
+        <br />
         <div class="row">
             <div class="col-md-offset-1 col-md-4">
                 <button class="btn btn-lg btn-block" disabled="disabled" runat="server" id="PreviousButton" onserverclick="PreviousButton_ServerClick" title="To load last month games"><i class="fa fa-backward" aria-hidden="true"></i> Previous</button>

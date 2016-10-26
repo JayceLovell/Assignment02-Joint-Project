@@ -26,8 +26,36 @@ body {
     width:150px;
 }
 
-.pageFooter
-{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:#7AEFFF;
+.pageFooter {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #7AEFFF;
+}
+#Game1 {
+    border: groove;
+    border-color: #7AE3FF;
+    border-width:thick;
+    background-image: url('../Assets/Images/backgroundTable.jpeg');
+    background-position:top;
+
+}
+#Game2{
+    border: groove;
+    border-width:thick;
+    border-color: #7AE3FF;
+    background-image: url('../Assets/Images/backgroundTable.jpeg');
+    background-position:top;
+}
+#Game3{
+    border: groove;
+    border-color: #7AE3FF;
+    background-image: url('../Assets/Images/backgroundTable.jpeg');
+    border-width:thick;
+    background-position:top;
+}
+#Game4{
+    border: groove;
+    border-color: #7AE3FF;
+    border-width:thick;
+    background-image: url('../Assets/Images/backgroundTable.jpeg');
+    background-position:top;
 }
