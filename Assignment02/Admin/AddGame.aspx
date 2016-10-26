@@ -25,7 +25,7 @@
                     <asp:TextBox runat="server" CssClass="form-control" ID="Team2Runs" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="Team1Out">Team2 Out:</label>
+                    <label class="control-label" for="Team1Out">Team1 Out:</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="Team1Out" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
