@@ -139,7 +139,7 @@ namespace Assignment02
         {
             using (CricketInfo db = new CricketInfo())
             {
-                db.Database.ExecuteSqlCommand("SELECT * INTO CricketInfoBackUp"+DateTime.Today.ToString()+" FROM CricketInfoMain");
+                db.Database.ExecuteSqlCommand("SELECT * INTO CricketInfoBackUp2016/" + DateTime.Today.Month.ToString() +" FROM CricketInfoMain");
             }
         }
     }
