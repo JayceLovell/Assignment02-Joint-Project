@@ -3,7 +3,7 @@
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-offset-4 col-md-4">
-                <h1>This Month Games</h1>
+                <h1>Games By Month</h1>
             </div>
         </div>
         <br />
