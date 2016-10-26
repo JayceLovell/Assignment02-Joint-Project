@@ -31,12 +31,12 @@ namespace Assignment02 {
         protected global::System.Web.UI.WebControls.GridView GamesGridView;
         
         /// <summary>
-        /// Refreshing control.
+        /// BackUp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor Refreshing;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor BackUp;
     }
 }

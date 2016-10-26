@@ -128,15 +128,18 @@ namespace Assignment02
 
                 //save my changes back to the db
                 db.SaveChanges();
-
+                db.Database.ExecuteSqlCommand("DBCC CHECKIDENT('CricketInfoMain', RESEED, 0);");
                 // refresh the grid
                 this.GetGames();
             }
         }
 
-        protected void Refreshing_ServerClick(object sender, EventArgs e)
+        protected void BackUp_ServerClick(object sender, EventArgs e)
         {
-            Response.Redirect("~/Admin/AdminPage.aspx");
+            using (CricketInfo db = new CricketInfo())
+            {
+                db.Database.ExecuteSqlCommand("SELECT * INTO CricketInfoBackUp"+DateTime.Today+" FROM CricketInfoMain;");
+            }
         }
     }
 }
