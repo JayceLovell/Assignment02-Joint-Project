@@ -55,12 +55,6 @@ namespace Assignment02
                     register.Attributes.Add("class", "active");
                     NotLoginHolder.Visible = false;
                     break;
-                case "About":
-                    register.Attributes.Add("class", "active");
-                    break;
-                case "UserAccount":
-                    register.Attributes.Add("class", "active");
-                    break;
                 case "AdminPage":
                     register.Attributes.Add("class", "active");
                     break;

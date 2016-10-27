@@ -57,7 +57,6 @@
                             </li>
                             <li><asp:Button Text="Login" ID="LoginButton" CssClass="btn btn-lg" runat="server" OnClick="LoginButton_Click"/></li>
                             </asp:PlaceHolder>
-                            <li id="about" runat="server"><a href="../About.aspx"><i class="fa fa-info" aria-hidden="true"></i> About</a></li>
                             <asp:PlaceHolder ID="LoginHolder" runat="server">
                             <asp:LinkButton CssClass="navbar-link navbar-text" ID="name" runat="server" OnClick="LogoutButton_Click" Text=""></asp:LinkButton>
                             </asp:PlaceHolder>
