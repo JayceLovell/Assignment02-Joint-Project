@@ -51,7 +51,7 @@ namespace Assignment02.Admin
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             //Redirect back to the GameList
-            Response.Redirect("~/Admin/AdminPage.aspx");
+            Response.Redirect("~/Admin/AdminPage");
         }
 
         protected void AddGameButton_Click(object sender, EventArgs e)
@@ -97,7 +97,7 @@ namespace Assignment02.Admin
                 db.SaveChanges();
 
                 //Redirect back to the GameList
-                Response.Redirect("~/Admin/AdminPage.aspx");
+                Response.Redirect("~/Admin/AdminPage");
             }
         }
     }
