@@ -42,13 +42,13 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li id="home" runat="server"><a href="../Default.aspx"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
+                            <li id="home" runat="server"><a href="../Default"><i class="fa fa-home fa-lg" aria-hidden="true"></i> Home</a></li>
                             <asp:PlaceHolder ID="Admins" runat="server" Visible="false">
-                                <li id="adminpage" runat="server"><a href="Admin/AdminPage.aspx"><i class="fa fa-lock" aria-hidden="true"></i> Admins</a></li>
+                                <li id="adminpage" runat="server"><a href="Admin/AdminPage"><i class="fa fa-lock" aria-hidden="true"></i> Admins</a></li>
                             </asp:PlaceHolder>
                             
                             <asp:PlaceHolder ID="NotLoginHolder" runat="server">
-                            <li id="register" runat="server"><a href="Register.aspx"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
+                            <li id="register" runat="server"><a href="Register"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a></li>
                             <li>
                                 <asp:TextBox Font-Size="25px" CssClass="form-control" ID="Usernametxt" runat="server" placeholder="Username" ></asp:TextBox>
                             </li>
